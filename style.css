@@ -1,0 +1,150 @@
+/* primary Color hsl(257, 40%, 49%) 
+font-family: 'Poppins', sans-serif; heading
+font-family: 'Open Sans', sans-serif; body
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+body {
+  background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat center
+    fixed;
+  background-size: cover;
+  padding: 5rem 10rem;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.logo {
+  margin-bottom: 12rem;
+}
+
+.mockup__left {
+  float: left;
+  margin-right: 5rem;
+}
+
+.mockup__image {
+  width: 100%;
+  height: auto;
+}
+.mockup__right {
+  padding-top: 5rem;
+  color: #fff;
+}
+
+.mockup__right--head {
+  margin-bottom: 2rem;
+  font-size: 3.6rem;
+  letter-spacing: 0.05rem;
+}
+
+.mockup__right--p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: 3.5rem;
+}
+
+.mockup__right--button {
+  color: hsl(257, 40%, 49%);
+  padding: 1.3rem 5rem;
+  background-color: #fff;
+  border-radius: 5rem;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 0.4rem rgba(78, 78, 78, 0.603);
+  font-size: 1.2rem;
+}
+
+.contact {
+  display: block;
+  position: absolute;
+  top: 90vh;
+  left: 85vw;
+}
+
+.contact__i {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0.5rem;
+  color: #fff;
+  border: 0.1rem solid #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.attribution {
+  display: block;
+  position: absolute;
+  top: 95vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    background-image: url("./images/bg-mobile.svg");
+    background-position: top;
+    background-size: contain;
+    padding: 5rem 3rem;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 6rem;
+    text-align: left;
+  }
+  .logo__image {
+    max-width: 50%;
+  }
+  .mockup__left {
+    float: none;
+    margin-right: 0;
+  }
+  .mockup__image {
+    max-width: 709px;
+  }
+  .mockup__right--head {
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.05rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .mockup__right--p {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mockup__right--button {
+    padding: 1.3rem 7rem;
+  }
+
+  .contact {
+    display: inline-block;
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .attribution {
+    display: block;
+    position: static;
+    margin-top: 2rem;
+    font-size: 11px;
+    transform: translateX(0);
+  }
+}
